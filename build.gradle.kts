@@ -366,6 +366,17 @@ publishing {
   publications.named("maven", MavenPublication::class) {
     from(components["java"])
   }
+
+  repositories {
+    maven {
+      name = "AlexDevs"
+      url = uri("https://maven.alexdevs.me/releases")
+      credentials {
+        username = System.getenv("MAVEN_USERNAME")
+        password = System.getenv("MAVEN_PASSWORD")
+      }
+    }
+  }
 }
 
 indraCrossdoc {
