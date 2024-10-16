@@ -369,11 +369,11 @@ publishing {
 
   repositories {
     maven {
-      name = "AlexDevs"
-      url = uri("https://maven.alexdevs.me/releases")
+      name = "ReconnectedCC"
+      url = uri("https://maven.reconnected.cc/releases")
       credentials {
-        username = System.getenv("MAVEN_USERNAME")
-        password = System.getenv("MAVEN_PASSWORD")
+        username = System.getenv("MAVEN_USERNAME_RCC")
+        password = System.getenv("MAVEN_PASSWORD_RCC")
       }
     }
   }
